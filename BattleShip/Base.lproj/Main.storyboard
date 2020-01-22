@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bground_textile" translatesAutoresizingMaskIntoConstraints="NO" id="qmk-6F-53W">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="qmk-6F-53W">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="BtE-rP-u2D">
@@ -30,7 +30,7 @@
                                             <constraint firstAttribute="width" constant="120" id="QwO-rO-PqM"/>
                                             <constraint firstAttribute="height" constant="120" id="fdp-F6-GGE"/>
                                         </constraints>
-                                        <state key="normal" image="tic-tac-toe-icon-8"/>
+                                        <state key="normal" image="tic"/>
                                         <connections>
                                             <segue destination="Apo-fz-kva" kind="show" identifier="ticTacToeLevel" id="zav-hP-dZj"/>
                                         </connections>
@@ -41,7 +41,7 @@
                                             <constraint firstAttribute="height" constant="120" id="Zvw-fi-zpq"/>
                                             <constraint firstAttribute="width" constant="120" id="bDC-Rv-aQV"/>
                                         </constraints>
-                                        <state key="normal" image="BullEye"/>
+                                        <state key="normal" image="bull"/>
                                         <connections>
                                             <segue destination="owg-Ak-JeK" kind="show" identifier="bullEyeLevel" id="ykD-Ss-SSt"/>
                                         </connections>
@@ -52,7 +52,7 @@
                                             <constraint firstAttribute="height" constant="120" id="Fc9-7G-FZD"/>
                                             <constraint firstAttribute="width" constant="120" id="bSP-wR-SSp"/>
                                         </constraints>
-                                        <state key="normal" image="Fifteen_3"/>
+                                        <state key="normal" image="15"/>
                                         <connections>
                                             <segue destination="ECn-NU-I5o" kind="show" identifier="fifteenLevel" id="tNH-V8-eH9"/>
                                         </connections>
@@ -94,7 +94,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bground_textile" translatesAutoresizingMaskIntoConstraints="NO" id="Ui9-3A-nQk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ui9-3A-nQk">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mrA-Jp-XG6">
@@ -448,7 +448,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bground_textile" translatesAutoresizingMaskIntoConstraints="NO" id="lMM-7G-dmJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="lMM-7G-dmJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYX-2V-BBc">
@@ -662,7 +662,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bground_textile" translatesAutoresizingMaskIntoConstraints="NO" id="piF-kF-1Rh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="piF-kF-1Rh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fm-ZH-ZMf">
@@ -735,7 +735,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bground_textile" translatesAutoresizingMaskIntoConstraints="NO" id="w1q-rX-z5P">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="w1q-rX-z5P">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="mV5-Hz-7wg">
@@ -788,7 +788,7 @@
                                     <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLW-ix-hQj" userLabel="ViewButtons">
                                         <rect key="frame" x="6.5" y="131" width="280" height="227"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tic_grates" translatesAutoresizingMaskIntoConstraints="NO" id="ITQ-Xs-yzD">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grates" translatesAutoresizingMaskIntoConstraints="NO" id="ITQ-Xs-yzD">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="227"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -961,10 +961,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BullEye" width="180" height="180"/>
-        <image name="Fifteen_3" width="180" height="180"/>
-        <image name="bground_textile" width="307.20001220703125" height="204.72000122070312"/>
-        <image name="tic-tac-toe-icon-8" width="512" height="512"/>
-        <image name="tic_grates" width="45.811241149902344" height="45.811241149902344"/>
+        <image name="15" width="192" height="192"/>
+        <image name="bg" width="122.87999725341797" height="81.839996337890625"/>
+        <image name="bull" width="192" height="192"/>
+        <image name="grates" width="19.54612922668457" height="19.54612922668457"/>
+        <image name="tic" width="192" height="192"/>
     </resources>
 </document>
