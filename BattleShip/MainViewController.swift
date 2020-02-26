@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var buttonTic: UIButton!
     @IBOutlet weak var buttonBullEye: UIButton!
     @IBOutlet weak var buttonFifteen: UIButton!
+    @IBOutlet weak var buttonDice: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

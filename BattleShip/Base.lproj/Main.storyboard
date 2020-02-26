@@ -10,6 +10,71 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Dice View Controller-->
+        <scene sceneID="MWT-tS-0wV">
+            <objects>
+                <viewController id="HCu-cK-iIQ" customClass="DiceViewController" customModule="BattleShip" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SoB-j7-Vs0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="UGD-CR-6Sy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIu-Ha-gcK">
+                                <rect key="frame" x="32" y="65" width="70" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="k56-DP-81L" kind="unwind" identifier="unwindSegue" unwindAction="uwindToMainScreenWithSegue:" id="pca-J5-fy7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBX-eD-OUa">
+                                <rect key="frame" x="127" y="543" width="121" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setNewGame:" destination="HCu-cK-iIQ" eventType="touchUpInside" id="Tv2-Uy-uQo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice_1" translatesAutoresizingMaskIntoConstraints="NO" id="VhR-kX-c4J">
+                                <rect key="frame" x="46" y="273" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice_1" translatesAutoresizingMaskIntoConstraints="NO" id="D5W-mh-5Hd" userLabel="dice_2">
+                                <rect key="frame" x="208" y="273" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4aa-xo-Icd" firstAttribute="trailing" secondItem="fIu-Ha-gcK" secondAttribute="trailing" constant="273" id="3HI-DW-K5R"/>
+                            <constraint firstItem="UGD-CR-6Sy" firstAttribute="bottom" secondItem="4aa-xo-Icd" secondAttribute="bottom" id="66A-K9-YKm"/>
+                            <constraint firstItem="fIu-Ha-gcK" firstAttribute="leading" secondItem="4aa-xo-Icd" secondAttribute="leading" constant="32" id="J1m-rC-5Fn"/>
+                            <constraint firstItem="UGD-CR-6Sy" firstAttribute="top" secondItem="SoB-j7-Vs0" secondAttribute="top" id="aPl-EA-dBk"/>
+                            <constraint firstItem="UGD-CR-6Sy" firstAttribute="leading" secondItem="4aa-xo-Icd" secondAttribute="leading" id="dWs-a6-IPI"/>
+                            <constraint firstItem="fIu-Ha-gcK" firstAttribute="top" secondItem="4aa-xo-Icd" secondAttribute="top" constant="45" id="kpo-Zg-bvt"/>
+                            <constraint firstItem="UGD-CR-6Sy" firstAttribute="trailing" secondItem="4aa-xo-Icd" secondAttribute="trailing" id="t26-wN-FWD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4aa-xo-Icd"/>
+                    </view>
+                    <connections>
+                        <outlet property="dice_left" destination="VhR-kX-c4J" id="52S-LP-as9"/>
+                        <outlet property="dice_right" destination="D5W-mh-5Hd" id="SIm-Me-ez4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIY-ai-D1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="k56-DP-81L" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="43"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -36,7 +101,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ta-ob-eR9">
-                                        <rect key="frame" x="127.5" y="213.5" width="120" height="120"/>
+                                        <rect key="frame" x="127.5" y="163" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="Zvw-fi-zpq"/>
                                             <constraint firstAttribute="width" constant="120" id="bDC-Rv-aQV"/>
@@ -46,8 +111,19 @@
                                             <segue destination="owg-Ak-JeK" kind="show" identifier="bullEyeLevel" id="ykD-Ss-SSt"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A1-Gf-Pxz">
+                                        <rect key="frame" x="127.5" y="326" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="A7B-1U-OOQ"/>
+                                            <constraint firstAttribute="width" constant="120" id="nvZ-vd-673"/>
+                                        </constraints>
+                                        <state key="normal" image="bull"/>
+                                        <connections>
+                                            <segue destination="HCu-cK-iIQ" kind="show" identifier="diceLevel" id="rUH-uL-Hvy"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0l-ze-Zfj">
-                                        <rect key="frame" x="127.5" y="427" width="120" height="120"/>
+                                        <rect key="frame" x="127.5" y="489" width="120" height="58"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="Fc9-7G-FZD"/>
                                             <constraint firstAttribute="width" constant="120" id="bSP-wR-SSp"/>
@@ -964,6 +1040,7 @@
         <image name="15" width="192" height="192"/>
         <image name="bg" width="122.87999725341797" height="81.839996337890625"/>
         <image name="bull" width="192" height="192"/>
+        <image name="dice_1" width="20" height="20"/>
         <image name="grates" width="19.54612922668457" height="19.54612922668457"/>
         <image name="tic" width="192" height="192"/>
     </resources>
