@@ -9,7 +9,6 @@
 import UIKit
 
 class DiceViewController: UIViewController {
-    
  
     @IBOutlet weak var dice_left: UIImageView!
     @IBOutlet weak var dice_right: UIImageView!
